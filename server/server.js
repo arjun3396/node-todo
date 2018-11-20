@@ -5,7 +5,7 @@ var {ObjectID} = require('mongodb');
 var {mongoose} = require('./db/mongoose');
 var {Todo} = require('./models/todo');
 var {User} = require('./models/user');
-export MONGOLAB_URI: 'mongodb://admin:useadmin@ds245512.mlab.com:45512/testing';
+var MONGOLAB_URI: 'mongodb://admin:useadmin@ds245512.mlab.com:45512/testing';
 var app = express();
 const port = process.env.MONGOLAB_URI || 3000;
 app.use(bodyParser.json());
